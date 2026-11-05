@@ -1,6 +1,6 @@
 export const CATEGORIES = ['Mugs', 'Bowls', 'Plates', 'Vases'] as const
 export type Category = (typeof CATEGORIES)[number]
-export type Shape = 'mug' | 'cup' | 'bowl' | 'deep-bowl' | 'plate' | 'vase' | 'bud-vase' | 'pitcher'
+export type Shape = 'mug' | 'cup' | 'bowl' | 'deep-bowl' | 'pasta-plate' | 'plate' | 'vase' | 'bud-vase' | 'pitcher'
 export interface Glaze { name: string; color: string }
 
 export interface Product {
@@ -52,7 +52,7 @@ export const PRODUCTS: Product[] = [
     blurb: 'A slender silhouette for branches and dried stems, weighted at the base.', details: ['H 32 cm', 'Watertight', 'Felt pad on the base'] },
   { id: 'p11', slug: 'bud-vase', name: 'Bud Vase', category: 'Vases', shape: 'bud-vase', price: 19, glazes: [G.moss, G.clay, G.milk], rating: 4.7, reviews: 95, isNew: true,
     blurb: 'Small enough for a windowsill, made for a single stem from the garden.', details: ['H 11 cm', 'Watertight', 'Each one is slightly different'] },
-  { id: 'p12', slug: 'pasta-plate', name: 'Pasta Plate', category: 'Plates', shape: 'deep-bowl', price: 38, glazes: [G.sand, G.sea], rating: 4.5, reviews: 63,
+  { id: 'p12', slug: 'pasta-plate', name: 'Pasta Plate', category: 'Plates', shape: 'pasta-plate', price: 38, glazes: [G.sand, G.sea], rating: 4.5, reviews: 63,
     blurb: 'Halfway between a plate and a bowl, shaped for twirling spaghetti.', details: ['Ø 23 cm', 'Dishwasher and microwave safe', 'Stoneware'] },
 ]
 
